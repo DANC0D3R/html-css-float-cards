@@ -17,7 +17,8 @@
     margin: 0 auto;
 }
 
-/* TITOLO  */
+
+/* TITOLO */
 
 h1{
     width: 100%;
@@ -28,24 +29,24 @@ h1{
 }
 
 .subtitle{
-    margin: 50px 0;
     font-size: 20px;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 0 5%;
     font-family: 'Fredoka';
 }
 
 main{
-    width: 1100px;
     margin: 0 auto;
-    padding-bottom: 80px;
+    width: 1100px;
+    padding: 0 80px;
 }
 
 /* ID CARDS */
 
 .card{
-    color: white;
+    color: #ffffff;
     height: 100%;
     width: calc(100% / 3 - 20px);
     float: left;
@@ -53,16 +54,33 @@ main{
     margin: 10px;
 }
 
-main::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .card img{
     height: 100px;
     float: left;
+    aspect-ratio: 1;
     box-shadow: 0px 0px 18px 1px #000000;
 }
 
-	
+.info{
+    width: calc(100% - 100px);
+    height: 100px;
+    background-color: #0f0e17;
+    float: left;
+    padding-left: 10px;
+    padding-right: 20px;
+    display: inline;
+    font-family: 'Fredoka';
+    box-shadow: 0px 0px 18px 1px #000000;
+}
+
+.info a{
+    color: #3cc5ff;
+    text-decoration: none;
+}
+
+.info-center{
+    position: relative;
+    top: 50%;
+    line-height: 25px;
+    transform: translateY(-50%);
+}
